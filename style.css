@@ -1,0 +1,5 @@
+console.log("¡ChaosGPT está vivo!");
+
+document.querySelector('h1').addEventListener('click', () => {
+    alert("⚠️ ¡Cuidado con el glitch!");
+});
