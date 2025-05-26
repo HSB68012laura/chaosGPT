@@ -13,7 +13,7 @@ function showItem(index) {
 }
 
 // Evento: siguiente slide
-if (nextBtn && items.length > 0) { // Solo añadir listeners si los elementos existen
+if (nextBtn && items.length > 0) { 
     nextBtn.addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % items.length;
         showItem(currentIndex);
@@ -21,7 +21,7 @@ if (nextBtn && items.length > 0) { // Solo añadir listeners si los elementos ex
 }
 
 // Evento: slide anterior
-if (prevBtn && items.length > 0) { // Solo añadir listeners si los elementos existen
+if (prevBtn && items.length > 0) { 
     prevBtn.addEventListener('click', () => {
         currentIndex = (currentIndex - 1 + items.length) % items.length;
         showItem(currentIndex);
@@ -32,12 +32,12 @@ if (prevBtn && items.length > 0) { // Solo añadir listeners si los elementos ex
 if (items.length > 0) {
     showItem(currentIndex);
 }
-// --- Código de Validación del Formulario de Contacto (NUEVO) ---
+// Validación del formulario de contacto
 
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contactForm');
 
-    // Solo ejecuta el código de formulario si el formulario existe en la página actual
+  
     if (contactForm) {
         const nameInput = document.getElementById('name');
         const emailInput = document.getElementById('email');
@@ -69,10 +69,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         contactForm.addEventListener('submit', (event) => {
-            // Prevenir el envío por defecto del formulario HTML5
-            event.preventDefault();
+                        event.preventDefault();
 
-            // Ocultar todos los mensajes de error y éxito al inicio de cada intento de envío
+            // Limpiar mensajes de error y éxito
             hideError(nameError);
             hideError(emailError);
             hideError(reasonError);
@@ -80,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             successMessage.textContent = '';
             successMessage.style.display = 'none';
 
-            let isValid = true; // Bandera para controlar si el formulario es válido
+            let isValid = true; 
 
             // Validar campo Nombre
             if (nameInput.value.trim() === '') {
@@ -111,8 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Si todas las validaciones pasan
             if (isValid) {
-                // Aquí es donde normalmente enviarías el formulario a un servidor.
-                // Para este ejemplo, simplemente mostraremos un mensaje de éxito.
+                // Aquí podrías enviar el formulario a un servidor
                 console.log('Formulario enviado con éxito (simulado):', {
                     name: nameInput.value,
                     email: emailInput.value,
