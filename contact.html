@@ -9,7 +9,13 @@
   <body>
     <header>
       <nav>
-        <div class="logo">ChaosGPT</div>
+        <div class="logo">
+          <img
+            src="assets/imagenes/logo.jpg"
+            alt="ChaosGPT Logo"
+            class="header-logo"
+          />
+        </div>
         <ul class="nav-links">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="blog.html">Blog</a></li>
@@ -26,6 +32,7 @@
           <input type="text" id="name" name="name" required />
           <div class="error-message" id="nameError"></div>
         </div>
+        <div class="success-message" id="successMessage"></div>
 
         <div class="form-group">
           <label for="email">Correo electrónico</label>

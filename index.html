@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Menú de navegación -->
     <header>
       <nav>
-        <div class="logo">ChaosGPT</div>
+        <div class="logo">
+          <img
+            src="assets/imagenes/logo.png"
+            alt="ChaosGPT Logo"
+            class="header-logo"
+          />
+        </div>
         <ul class="nav-links">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="blog.html">Blog</a></li>
@@ -19,46 +24,59 @@
       </nav>
     </header>
 
-    <!-- Bienvenida -->
     <section class="welcome">
       <h1>Bienvenido a ChaosGPT</h1>
       <p>
-        Explora las últimas novedades y reflexiones sobre inteligencia
-        artificial.
+        El único blog donde la IA y el caos bailan juntos. Sumérgete en
+        información, experimentos fallidos y humor ácido mientras exploramos el
+        lado más desquiciado y fascinante de las máquinas pensantes.
       </p>
     </section>
 
-    <!-- Carrusel de novedades -->
     <section class="carousel">
       <h2>Últimas Entradas</h2>
       <div class="carousel-container">
         <div class="carousel-item active">
-          <img
-            src="https://via.placeholder.com/600x300?text=Entrada+1"
-            alt="Entrada 1"
-          />
-          <h3>Entrada 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="entrada-1.html">
+            <img
+              src="assets/imagenes/imagen-entrada-1.jpg"
+              alt="El futuro de la IA"
+            />
+            <h3>El futuro de la IA</h3>
+          </a>
+          <p>
+            Explora cómo la inteligencia artificial está transformando nuestro
+            mundo y qué nos depara el futuro.
+          </p>
         </div>
         <div class="carousel-item">
-          <img
-            src="https://via.placeholder.com/600x300?text=Entrada+2"
-            alt="Entrada 2"
-          />
-          <h3>Entrada 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="entrada-2.html">
+            <img
+              src="assets/imagenes/imagen-entrada-2.jpg"
+              alt="Título de la Entrada 2"
+            />
+            <h3>Ética en la IA</h3>
+          </a>
+          <p>
+            Un análisis profundo sobre los dilemas éticos que presenta el
+            desarrollo de la inteligencia artificial.
+          </p>
         </div>
         <div class="carousel-item">
-          <img
-            src="https://via.placeholder.com/600x300?text=Entrada+3"
-            alt="Entrada 3"
-          />
-          <h3>Entrada 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="entrada-3.html">
+            <img
+              src="assets/imagenes/imagen-entrada-3.jpg"
+              alt="Título de la Entrada 3"
+            />
+            <h3>IA y Creatividad</h3>
+          </a>
+          <p>
+            ¿Puede una IA ser verdaderamente creativa? Descubre las últimas
+            investigaciones en este campo.
+          </p>
         </div>
       </div>
 
-      <!-- Controles -->
       <div class="carousel-controls">
         <button id="prev">&#10094;</button>
         <button id="next">&#10095;</button>

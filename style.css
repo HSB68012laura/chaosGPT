@@ -7,15 +7,15 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #1a001f;
-  color: #f0e6f6;
+  background-color: #f8f8f8;
+  color: #333333;
   line-height: 1.6;
 }
 
 /* NAV */
 header {
-  background-color: #3d0066;
-  padding: 1rem 2rem;
+  background-color: #131a24;
+  padding: 0.5rem 2rem;
 }
 
 nav {
@@ -27,7 +27,6 @@ nav {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #bb86fc;
 }
 
 .nav-links {
@@ -43,18 +42,21 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #bb86fc;
+  color: #4a008a;
 }
 
-/* Bienvenida *
-  .welcome {
+/* Bienvenida */
+.welcome {
   padding: 2rem;
   text-align: center;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 .welcome h1 {
   font-size: 2.5rem;
-  color: #bb86fc;
+  color: #131a24;
+  text-align: center;
 }
 
 .welcome p {
@@ -70,15 +72,16 @@ nav {
 
 .carousel h2 {
   margin-bottom: 1rem;
-  color: #bb86fc;
+  color: #333333;
 }
 
 .carousel-container {
-  display: flex;
-  overflow: hidden;
   position: relative;
-  max-width: 800px;
+  max-width: 948px;
   margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .carousel-item {
@@ -96,7 +99,10 @@ nav {
 
 .carousel-item img {
   width: 100%;
-  height: auto;
+  max-width: 948px;
+  height: 339px;
+  object-fit: cover;
+  display: block;
   border-radius: 8px;
 }
 
@@ -105,9 +111,9 @@ nav {
 }
 
 .carousel-controls button {
-  background-color: #bb86fc;
+  background-color: #4a008a;
   border: none;
-  color: #1a001f;
+  color: #f0e6f6;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   margin: 0 0.5rem;
@@ -117,19 +123,29 @@ nav {
 }
 
 .carousel-controls button:hover {
-  background-color: #e0b3ff;
+  background-color: #131a24;
 }
 
 /* Blog - Encabezado */
 .blog-header {
-  padding: 2rem;
+  padding: 3rem 2rem;
   text-align: center;
+  max-width: 980px;
+  margin: 0 auto;
+  color: #333333;
+  background-color: #f8f8f8;
 }
 
 .blog-header h1 {
-  font-size: 2.5rem;
-  color: #bb86fc;
-  margin-bottom: 0.5rem;
+  font-size: 2.8rem;
+  color: #131a24;
+  margin-bottom: 1rem;
+}
+.blog-header p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #555555;
 }
 
 /* Blog - Galería de entradas */
@@ -141,40 +157,61 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
 }
+.blog-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
 
 .blog-card {
-  background-color: #2a0033;
+  background-color: #ffffff;
+  color: #333333;
   border-radius: 10px;
   overflow: hidden;
-  padding: 1rem;
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #eeeeee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
 }
 
 .blog-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .blog-card img {
   width: 100%;
-  height: auto;
+  height: 200px;
+  object-fit: cover;
   border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
 .blog-card h2 {
   color: #bb86fc;
-  margin: 1rem 0 0.5rem;
+  font-size: 1.3rem;
+  margin: 0 0 0.8rem;
+  flex-grow: 1;
 }
 
 .blog-card p {
   font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+  color: #555555;
 }
 
 /* Botón leer más */
 .btn {
   display: inline-block;
   margin-top: 1rem;
-  background-color: #bb86fc;
-  color: #1a001f;
+  background-color: #4a008a;
+  color: #f0e6f6;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   text-decoration: none;
@@ -187,30 +224,37 @@ nav {
 
 /* Contacto */
 .contact-section {
-  padding: 2rem;
-  max-width: 600px;
-  margin: 2rem auto;
-  background-color: #2a0033;
+  padding: 4rem 2rem;
+  max-width: 980px;
+  text-align: center;
+  margin: 3rem auto;
+  background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+  color: #333333;
 }
 
 .contact-section h1 {
-  text-align: center;
-  color: #bb86fc;
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
+  color: #131a24;
+  margin-bottom: 2rem;
+  font-size: 2.8rem;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .contact-form label {
   margin-bottom: 0.5rem;
-  color: #f0e6f6;
+  color: #131a24;
   font-weight: bold;
+  display: block;
+  font-size: 1rem;
 }
 
 .contact-form input[type="text"],
@@ -255,6 +299,75 @@ nav {
   background-color: #e0b3ff;
 }
 
+.error-message {
+  color: #e74c3c; /* Rojo para errores */
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  text-align: right; /* Alinea el mensaje de error a la derecha del campo */
+  min-height: 1rem; /* Mantiene el espacio para evitar saltos de diseño */
+}
+
+.success-message {
+  color: #27ae60; /* Verde para éxito */
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #bb86fc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Arial", sans-serif;
+  box-sizing: border-box;
+  background-color: #fcfcfc;
+  color: #333333;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #bb86fc;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(187, 134, 252, 0.2);
+}
+.form-group select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #bb86fc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Arial", sans-serif;
+  box-sizing: border-box;
+  background-color: #fcfcfc;
+  color: #333333;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #bb86fc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Arial", sans-serif;
+  box-sizing: border-box;
+  background-color: #fcfcfc;
+  color: #333333;
+}
 /* Responsive design básico */
 @media (max-width: 768px) {
   nav {
@@ -295,12 +408,14 @@ nav {
 }
 /* Contacto */
 .contact-section {
-  padding: 2rem;
-  max-width: 600px;
-  margin: 2rem auto;
-  background-color: #2a0033;
+  padding: 4 rem 2rem;
+  text-align: center;
+  max-width: 980px;
+  margin: 3rem auto;
+  background-color: #fcfcfc;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  color: #333333;
 }
 
 .contact-section h1 {
@@ -349,18 +464,21 @@ nav {
 
 .contact-form button {
   background-color: #bb86fc;
-  color: #1a001f;
-  padding: 0.8rem 1.5rem;
+  color: #131a24;
+  padding: 1rem 2rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.1rem;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 .contact-form button:hover {
   background-color: #e0b3ff;
+  transform: translateY(-2px);
 }
 
 /* Responsive design básico */
@@ -400,4 +518,116 @@ nav {
     margin: 1rem;
     padding: 1.5rem;
   }
+}
+/* Estilos para las páginas de detalle de entrada (post-detail) */
+.post-detail {
+  padding: 1.5rem;
+  margin: 1.5rem 1rem;
+}
+
+.post-detail h1 {
+  font-size: 2rem;
+}
+
+.post-detail img {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.post-detail .post-meta {
+  text-align: center;
+  color: #777777;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 1rem;
+}
+
+.post-detail .post-content p {
+  font-size: 0.95rem;
+}
+
+.post-detail .post-content h2 {
+  font-size: 1.5rem;
+}
+
+.back-to-blog {
+  display: block;
+  width: fit-content;
+  margin: 3rem auto 1rem;
+  background-color: #bb86fc;
+  color: #131a24;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-blog:hover {
+  background-color: #e0b3ff;
+}
+
+/* Para asegurar que los enlaces de las imágenes no tengan un subrayado feo */
+.carousel-item a {
+  text-decoration: none;
+  color: inherit; /* Hereda el color del texto para el título */
+  display: block; /* Para que el enlace ocupe todo el espacio del contenido */
+}
+
+.carousel-item a:hover h3 {
+  color: #4a008a; /* Un efecto de hover para el título */
+}
+
+/* Pequeño ajuste para el estilo del blog grid (blog.html) para que el botón de leer más sea clicable en toda la tarjeta */
+.blog-card .btn {
+  width: fit-content; /* Ocupa el ancho de su contenido */
+  margin-left: auto; /* Centra el botón si es necesario */
+  margin-right: auto;
+}
+
+/* --- Estilos para la tarjeta del Blog (blog.html) --- */
+
+/* Asegura que el enlace ocupe toda la tarjeta */
+.blog-card-link {
+  text-decoration: none; /* Elimina el subrayado por defecto del enlace */
+  color: inherit; /* Hereda el color del texto para que no sea el azul por defecto */
+  display: block; /* Hace que el enlace se comporte como un bloque y ocupe todo el espacio */
+  border-radius: 10px; /* Para que el borde redondeado del enlace coincida con el de la tarjeta */
+  overflow: hidden; /* Asegura que el contenido respete los bordes redondeados */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añade transiciones para un efecto de hover suave */
+}
+
+/* Aplica los estilos visuales a la tarjeta misma */
+.blog-card {
+  background-color: #2a0033;
+  padding: 1rem;
+  height: 100%; /* Asegura que todas las tarjetas tengan la misma altura si están en un grid */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Para que el contenido se distribuya bien */
+}
+
+/* Efecto hover en toda la tarjeta cuando el enlace se sobrevuela */
+.blog-card-link:hover {
+  transform: translateY(-5px); /* Efecto de "levantar" */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+}
+
+.blog-card-link:hover h2 {
+  color: #e0b3ff; /* Cambia el color del título al pasar el ratón */
+}
+
+/* Ajustes para el texto de la tarjeta, si es necesario */
+.blog-card h2 {
+  margin-bottom: 0.5rem; /* Asegura un buen espaciado */
+}
+
+.blog-card p {
+  flex-grow: 1; /* Permite que el párrafo ocupe el espacio disponible */
+  margin-bottom: 1rem; /* Espacio antes del final o de un posible botón */
 }
