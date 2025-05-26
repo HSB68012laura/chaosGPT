@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - ChaosGPT</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">ChaosGPT</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact-section">
+      <h1>Contáctanos</h1>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required />
+          <div class="error-message" id="nameError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required />
+          <div class="error-message" id="emailError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="reason">Motivo del contacto</label>
+          <select id="reason" name="reason" required>
+            <option value="">-- Selecciona una opción --</option>
+            <option value="consulta">Consulta general</option>
+            <option value="colaboracion">Propuesta de colaboración</option>
+            <option value="soporte">Soporte técnico</option>
+            <option value="otro">Otro</option>
+          </select>
+          <div class="error-message" id="reasonError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <div class="error-message" id="messageError"></div>
+        </div>
+
+        <button type="submit">Enviar</button>
+        <div class="success-message" id="successMessage"></div>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

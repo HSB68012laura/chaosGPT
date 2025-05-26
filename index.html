@@ -3,21 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChaosGPT | Blog de IA Caótica</title>
+    <title>ChaosGPT - Blog de IA</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Menú de navegación -->
     <header>
-      <h1>CHAOS<span>//</span>GPT</h1>
-      <p class="error-message">ERROR 404: Normalidad no encontrada</p>
+      <nav>
+        <div class="logo">ChaosGPT</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-      <article class="post">
-        <h2>Bienvenido al caos</h2>
-        <p>Un blog donde la IA se rompe... literalmente.</p>
-      </article>
-    </main>
+    <!-- Bienvenida -->
+    <section class="welcome">
+      <h1>Bienvenido a ChaosGPT</h1>
+      <p>
+        Explora las últimas novedades y reflexiones sobre inteligencia
+        artificial.
+      </p>
+    </section>
+
+    <!-- Carrusel de novedades -->
+    <section class="carousel">
+      <h2>Últimas Entradas</h2>
+      <div class="carousel-container">
+        <div class="carousel-item active">
+          <img
+            src="https://via.placeholder.com/600x300?text=Entrada+1"
+            alt="Entrada 1"
+          />
+          <h3>Entrada 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://via.placeholder.com/600x300?text=Entrada+2"
+            alt="Entrada 2"
+          />
+          <h3>Entrada 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://via.placeholder.com/600x300?text=Entrada+3"
+            alt="Entrada 3"
+          />
+          <h3>Entrada 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <div class="carousel-controls">
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+      </div>
+    </section>
 
     <script src="script.js"></script>
   </body>
