@@ -429,10 +429,20 @@ nav {
 
 .post-detail .post-content p {
   font-size: 0.95rem;
+  margin-bottom: 1em;
 }
 
 .post-detail .post-content h2 {
   font-size: 1.5rem;
+}
+
+.post-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.post-content ul li {
+  margin-bottom: 10px;
 }
 
 .back-to-blog {
