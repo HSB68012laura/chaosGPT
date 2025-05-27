@@ -133,3 +133,37 @@ document.addEventListener('DOMContentLoaded', () => {
         messageTextarea.addEventListener('input', () => hideError(messageError));
     }
 });
+
+//Logica menú hamburguesa
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger-menu");
+  const navLinks = document.querySelector(".nav-links");
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      hamburger.classList.toggle("active");
+    });
+
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        if (navLinks.classList.contains("active")) {
+          navLinks.classList.remove("active");
+          hamburger.classList.remove("active");
+        }
+      });
+    });
+
+    document.addEventListener("click", (event) => {
+      if (
+        !navLinks.contains(event.target) &&
+        !hamburger.contains(event.target) &&
+        navLinks.classList.contains("active")
+      ) {
+        navLinks.classList.remove("active");
+        hamburger.classList.remove("active");
+      }
+    });
+  }
+}
+);
